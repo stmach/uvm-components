@@ -24,6 +24,9 @@ add wave -noupdate -group ex_stage -group mult -group mul /core_tb/dut/ex_stage_
 add wave -noupdate -group ex_stage -group mult -group div /core_tb/dut/ex_stage_i/i_mult/i_div/*
 add wave -noupdate -group ex_stage -group mult -group ff1 /core_tb/dut/ex_stage_i/i_mult/i_ff1/*
 
+add wave -noupdate -group ex_stage -group fpu /core_tb/dut/ex_stage_i/fpu_gen/fpu_i/*
+add wave -noupdate -group ex_stage -group fpu -group fpnew /core_tb/dut/ex_stage_i/fpu_gen/fpu_i/fpnew_top_i/i_fpnew/*
+
 add wave -noupdate -group ex_stage -group lsu /core_tb/dut/ex_stage_i/lsu_i/*
 add wave -noupdate -group ex_stage -group lsu  -group lsu_bypass /core_tb/dut/ex_stage_i/lsu_i/lsu_bypass_i/*
 add wave -noupdate -group ex_stage -group lsu -group mmu /core_tb/dut/ex_stage_i/lsu_i/i_mmu/*
@@ -67,3 +70,5 @@ add wave -noupdate -group nbdcache -group load {/core_tb/dut/ex_stage_i/lsu_i/i_
 add wave -noupdate -group nbdcache -group store {/core_tb/dut/ex_stage_i/lsu_i/i_nbdcache/master_ports[2]/i_cache_ctrl/*}
 
 add wave -noupdate -group perf_counters {/core_tb/dut/i_perf_counters/*}
+
+set NumericStdNoWarnings 1
