@@ -24,8 +24,8 @@ add wave -noupdate -group ex_stage -group mult -group mul /core_tb/dut/ex_stage_
 add wave -noupdate -group ex_stage -group mult -group div /core_tb/dut/ex_stage_i/i_mult/i_div/*
 add wave -noupdate -group ex_stage -group mult -group ff1 /core_tb/dut/ex_stage_i/i_mult/i_ff1/*
 
-add wave -noupdate -group ex_stage -group fpu /core_tb/dut/ex_stage_i/fpu_gen/fpu_i/*
 add wave -noupdate -group ex_stage -group fpu -group fpnew /core_tb/dut/ex_stage_i/fpu_gen/fpu_i/fpnew_top_i/i_fpnew/*
+add wave -noupdate -group ex_stage -group fpu /core_tb/dut/ex_stage_i/fpu_gen/fpu_i/*
 
 add wave -noupdate -group ex_stage -group lsu /core_tb/dut/ex_stage_i/lsu_i/*
 add wave -noupdate -group ex_stage -group lsu  -group lsu_bypass /core_tb/dut/ex_stage_i/lsu_i/lsu_bypass_i/*
